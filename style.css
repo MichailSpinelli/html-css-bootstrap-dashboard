@@ -1,0 +1,32 @@
+/*
+    RESET
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    background-color: brown;
+}
+
+main{
+    background-color: khaki;
+}
+
+.main-left{
+    height: 90vh;
+    display: inline-block;
+    width:10vw;
+    background-color: #0E253B;
+}
+
+.main-right{
+    background-color:darkgreen;
+    display: inline-block;
+    color: white;
+    width: 90vw;
+}
