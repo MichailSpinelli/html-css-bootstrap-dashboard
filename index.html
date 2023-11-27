@@ -25,15 +25,13 @@
 </head>
 <body>
     
-    <header>
+    <header id="main-header" class="d-flex align-items-center">
         
         <div class="container-fluid vh-20 p-3">
 
-            <div class="container-md p-0 m-0">
-
                 <div class="row d-flex">
     
-                    <div class="col-2">
+                    <div class="col-auto">
     
                         <div class="img d-none d-md-block">
                             <img src="img/logo.svg" alt="logo">
@@ -45,7 +43,7 @@
     
                     </div>
     
-                    <div class="col-8">
+                    <div class="col">
                         
                         <form action="">
 
@@ -65,7 +63,7 @@
                         </form>
                     </div>
     
-                    <div class="col-2 d-flex justify-content-end">
+                    <div class="col-auto d-flex justify-content-end">
 
                         <span class="icons-right">
 
@@ -109,288 +107,379 @@
 
                 </div>
     
-            </div>
 
         </div>
 
 
     </header>
 
-    <main>
-
-    
-        <!--RIGA CHE CONTIENE DUE COLONNE, UNA MAIN LEFT, UNA MAIN RIGHT-->
+    <!--RIGA CHE CONTIENE DUE COLONNE, UNA MAIN LEFT, UNA MAIN RIGHT-->
         
-        <div class="row">
+    <div class="row">
 
-            <!-- COLONNA SINISTRA-->
+        <!-- COLONNA SINISTRA-->
 
-            <div class="main-left text-light">
+        <div class="main-left text-light">
 
-                <div class="container d-flex">
+            <div class="container d-flex">
 
-                    <div class="container d-flex flex-column justify-content-between">
+                <div class="container d-flex flex-column justify-content-between">
 
-                        <!--ICONE DI SOPRA-->
+                    <!--ICONE DI SOPRA-->
 
-                        <div class="icons-main-left ">
+                    <div class="icons-main-left ">
 
-                            <div class="home">
+                        <div class="home">
 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
-                                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-                                </svg>
-        
-                                <span class="d-none d-md-block">
-                                    Home
-                                </span>
-        
-                            </div>
-        
-                            
-                            <div class="statistic">
-                                
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
-                                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
-                                </svg>
-        
-                                <span class="d-none d-md-block">
-                                    stats
-                                </span>
-                                   
-                            </div>
-        
-                            <div class="signals">
-        
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">
-                                    <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
-                                </svg>
-        
-                                <span class="d-none d-md-block">
-                                    signals
-                                </span>
-        
-                            </div>
-
-                        </div>
-
-                        <!--ROTELLA SETTINGS-->
-
-                        <div class="settings-main-left ">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
-                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
                             </svg>
-
+    
+                            <span class="d-none d-md-block">
+                                Home
+                            </span>
+    
+                        </div>
+    
+                        
+                        <div class="statistic">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-3" viewBox="0 0 16 16">
+                                <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+    
+                            <span class="d-none d-md-block">
+                                stats
+                            </span>
+                               
+                        </div>
+    
+                        <div class="signals">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">
+                                <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+    
+                            <span class="d-none d-md-block">
+                                signals
+                            </span>
+    
                         </div>
 
                     </div>
 
-                </div>
+                    <!--ROTELLA SETTINGS-->
 
-                
+                    <div class="settings-main-left ">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <!--COLONNA DESTRA, LA DIVIDO IN RIGHT-HEADER E RIGHT-MAIN-->
+            
+
+        </div>
+
+        <!--COLONNA DESTRA, LA DIVIDO IN RIGHT-HEADER E RIGHT-MAIN-->
 
 
-            <div class="container-fluid main-right">
+        <div class="container-fluid main-right">
 
-                <!--RIGHT-HEADER-->
+            <!--RIGHT-HEADER-->
 
-                <div class="container d-flex justify-content-between flex-wrap p-3 right-header">
+            <div class="container d-flex justify-content-between flex-wrap p-3 right-header">
 
-                    <div class="width: 30%">
+                <div class="width: 30%">
 
-                        <h5>Example heading <span class="badge bg-secondary">Piano blaze</span></h5>
-                        <span class="badge bg-secondary">3 app</span>
-                        <span class="badge bg-secondary">Boolean mobile app</span>
-                        <span class="badge bg-secondary">Boolean web app</span>
-                        <span class="badge bg-secondary">Boolean blog app</span>
-
-                    </div>
-
-                    <div class="width: 30%">
-
-                        <div>
-                            Studenti online negli ultimi 30 minuti
-                        </div>
-
-                        <div>
-                            <h5>
-                                124
-                            </h5>
-                        </div>
-
-                    </div>
-
-                    <div class="width: 30%">
-
-                        <p>
-                            Nuovo studente <span>bottone</span>
-                        </p>
-                        
-                    </div>
-                    
-
-
+                    <h5>Example heading <span class="badge bg-secondary">Piano blaze</span></h5>
+                    <span class="badge bg-secondary">3 app</span>
+                    <span class="badge bg-secondary">Boolean mobile app</span>
+                    <span class="badge bg-secondary">Boolean web app</span>
+                    <span class="badge bg-secondary">Boolean blog app</span>
 
                 </div>
 
-                <!--RIGHT-MAIN-->
+                <div class="width: 30%">
+
+                    <div>
+                        Studenti online negli ultimi 30 minuti
+                    </div>
+
+                    <div>
+                        <h5>
+                            124
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="width: 30%">
+
+                    <p>
+                        Nuovo studente <span>bottone</span>
+                    </p>
+                    
+                </div>
+                
 
 
-                <div class="container">
 
-                    <div class="card"> 
+            </div>
 
-                        <div class="card-body">
-                            <table class="table table-bordered">
+            <!--RIGHT-MAIN-->
 
-                                <thead>
-      
-                                  <tr>
-      
-                                      <th class="table-dark">
-                                          PROSSIME CLASSI
-                                      </th>
-                                      <th class="table-dark"></th>
-                                      <th class="table-dark"></th>
-                                      <th class="table-dark"></th>
-                                      <th class="table-dark"></th>
-                                      <th class="table-dark"></th>
-                                      <th class="table-dark"></th>
-                                  </tr>
-      
-                                  <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-      
-                                  </tr>
-      
-                                </thead>
-      
-                                <tbody>
-      
-                                  <tr>
-      
-                                      <td>Classe</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-      
-                                  </tr>
-      
-                                  <tr>
-      
-                                      <td>classe</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                    <tr>
-      
-                                      <td>Nome</td>
-                                      <td></td>
-                                      <td></td>
-                                      <td>Data inizio</td>
-                                      <td>Roi</td>
-                                      <td>Stato</td>
-                                      <td>azioni</td>
-        
-                                    </tr>
-      
-                                </tbody>
-      
-                              </table>
+
+            <div class="container">
+
+                <div class="row g-0">
+
+                    <div class="col-md-12 col-lg-8 bg-dark text-light">
+
+                        <!--PRIMA CARD-->
+
+                        <div class="card prossima-classe"> 
+
+                            <div class="card-body">
+                                
+                                <table class="table">
+                                    
+                                    <thead>
+
+                                      <tr>
+                                        <td scope="col" class="w-60">Nome</td>
+                                        <th scope="col" class="w-10">Data inizio</th>
+                                        <th scope="col" class="w-10">ROI</th>
+                                        <th scope="col" class="w-10">Stato</th>
+                                        <th scope="col" class="w-10">Azioni</th>
+                                      </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="w-60">Classe</td>
+                                            <td class="w-10">15 feb 2020</td>
+                                            <td class="w-10">15 </td>
+                                            <td class="w-10">15</td>
+                                            <td class="w-10">15</td>
+                                        </tr>
+
+                                        
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+    
+                        </div>
+
+                        <!--SECONDA CARD-->
+
+
+                        <div class="card faq"> 
+
+                            <div class="card-body">
+                                
+                                <table>
+                                    <thead>
+                                        <tr class="table-primary">
+                                            F.A.Q.
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <div>
+                                    
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Come aggiungere un nuovo studente?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Come posso accedere alle informazioni del mio account?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Posso usare questa dashboard da mobile?</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                </div>
+
+                                <hr>
+
+                            </div>
+    
                         </div>
 
                     </div>
+
+                    <div class="col-md-12 col-lg-4 bg-light">
+ 
+                        <!--TERZA CARD-->
+
+                        <div class="card todo"> 
+
+                            <div class="card-body">
+                                
+                                <table>
+                                    <thead>
+                                        <tr class="table-primary">
+                                            Todo
+                                        </tr>
+                                    </thead>
+                                </table>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Kickoff nuove classi
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Lezioni su Bootstrap 5 in classe #75
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Controllare username github studenti
+                                    </label>
+                                </div>
+
+                            </div>
+    
+                        </div>
+
+                        <!--QUARTA CARD-->
+                        
+                        <div class="card utenti"> 
+
+                            <div class="card-body">
+
+                                <div class="img">
+                                    <img src="img/stats.jpeg" alt="logo" style="width: 100%;">
+                                </div>
+
+                                <h5>
+                                    Utenti attivi
+                                </h5>
+
+                                <p>
+                                    lista degli utenti attivi in piattaforma nell'ultimo mese
+                                </p>
+
+                                <p>
+                                    Gennaio: 1200
+
+                                    <br>
+
+                                    <hr>
+
+                                    Gennaio: 1200
+
+                                    <br>
+
+                                    <hr>
+
+                                    Gennaio: 1200
+
+                                    <br>
+
+                                    <hr>
+
+                                    <a href="#" class="alert-link">visualizza report approfondito</a>
+
+                                </p>
+                            </div>
+    
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-        
-        
-    </main>
-
+    </div>
+    
 </body>
 </html>
