@@ -8,20 +8,12 @@
     box-sizing: border-box;
 }
 
-:root {
-    --main-header-height: 60px;
+main{
+    background-color: khaki;
 }
 
 #main-header{
-    height: var(--main-header-height);
-}
-
-#main-section{
-    height: calc(100vh -var(--main-header-height));
-}
-
-main{
-    background-color: khaki;
+    height: 10vh;
 }
 
 .main-left{
@@ -32,13 +24,13 @@ main{
 }
 
 .main-right{
-    background-color:darkgreen;
+   
     display: inline-block;
     color: white;
     width: 90vw;
+    height: 90vh;
 }
 
 .right-header{
     background-color: #1B72E8;
 }
-
